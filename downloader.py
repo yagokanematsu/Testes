@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 import yt_dlp
 
-# Cores
 COR_FUNDO = "#ebdec1" 
 COR_TEXTO = "black"
 COR_BOTAO = "#e33400" 
@@ -74,7 +73,6 @@ def baixar_mp4():
     estilizar_botao(botao_fechar)
     botao_fechar.pack(pady=5)
 
-# Criando janela principal
 aba = tk.Tk()
 aba.title("YouTube Downloader")
 aba.geometry("400x300")

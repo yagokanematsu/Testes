@@ -44,7 +44,7 @@ nome = tk.Entry(quadrado, font=("helvetica", 12), width=10)
 nome.grid(row=1, column=1, padx=10, pady=10)
 
 nome1 = tk.Entry(quadrado, font=("helvetica", 12), width=10)
-nome1.grid(row=2, column=1, padx=10, pady=10)
+nome1.grid(row=2,column=1,   padx=10, pady=10)
 
 nome2 = tk.Entry(quadrado, font=("helvetica", 12), width=10)
 nome2.grid(row=3, column=1, padx=10, pady=10)

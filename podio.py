@@ -1,5 +1,7 @@
 import tkinter as tk
 
+at = 0
+
 def podio():
     try:
         valor1 = int(nome.get())

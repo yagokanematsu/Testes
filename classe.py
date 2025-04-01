@@ -24,11 +24,10 @@ class carro(transporte):
         self.capacidade = capacidade
 
     def __str__(self):
-        autonomia = self.calcular_autonomia()
-        return f"Um {self.marca} {self.modelo} {self.ano}, com capacidade do tanque de {self.capacidade} L, tem autonomia de {autonomia} km"
+        return f"Um {self.marca} {self.modelo} {self.ano}, com capacidade do tanque de {self.capacidade} L"
 
-    def mudar_carga(self):
-        self.carga = float(input())
+    def mudar_capacidade(self):
+        self.capacidade = int(input())
 
 
 

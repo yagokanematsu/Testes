@@ -24,14 +24,12 @@ class carro(transporte):
         self.capacidade = capacidade
 
     def __str__(self):
-        return f"Um {self.marca} {self.modelo} {self.ano}, com capacidade do tanque de {self.capacidade} L"
+        return f"Um {self.marca} {self.modelo} {self.ano}, com capacidade do tanque de {self.capacidade}"
 
     def mudar_capacidade(self):
         self.capacidade = int(input())
 
-
-
-class Caminhao(transporte):
+class caminhao(transporte):
     def __init__(self, marca, modelo, ano, carga):
         super().__init__(marca, modelo, ano)
         self.carga = carga

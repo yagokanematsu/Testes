@@ -5,19 +5,19 @@ from PIL import Image, ImageTk
 def aleatorio():
     global foto
     numero = random.randint(1, 6)
-    imagem_caminho = f'C:\\Programas\\dado{numero}.jpg'
+    imagem_caminho = f'C:\\Programas\\media\\dado{numero}.jpg'
     imagem = Image.open(imagem_caminho)
     foto = ImageTk.PhotoImage(imagem)  
     espaco.config(image=foto)
 
 aba = tk.Tk()
-aba.geometry('500x300')
+aba.geometry('300x300')
 aba.title('Dado')
 
-quadrado = tk.Frame(aba, bg="#ffffff", padx=100, pady=50)
+quadrado = tk.Frame(aba, padx=100, pady=50)
 quadrado.pack(pady=40)
 
-imagem_caminho = "C:\\Programas\\branco.jpg"
+imagem_caminho = "C:\\Programas\\media\\branco.jpg"
 imagem = Image.open(imagem_caminho)
 foto = ImageTk.PhotoImage(imagem)
 

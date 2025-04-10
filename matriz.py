@@ -15,6 +15,7 @@ linha = int(input("Número de linhas:\n"))
 coluna = int(input("Número de colunas:\n"))
 par, impar, nulo = 0, 0, 0
 matriz = matriz_aleatoria(linha,coluna)
+
 for i in matriz:
     for j in i:
         if j == 0:
@@ -41,7 +42,9 @@ if a == 's':
                 print(f"Linha {localizacao[0][i]}, Coluna {localizacao[1][i]}")
         else:
             print(f"\nO elemento {elemento} não foi encontrado na matriz.")
-        a = input('Ainda quer procurar algum elemento na matriz (s/n)?\n').lower()
+        a=''
+        while a!= 's' and a!='n':
+            a = input('\nAinda quer procurar algum elemento na matriz (s/n)?\n').lower()
     print('\nEncerrado.')
 else:
     print('\nEncerrado.')

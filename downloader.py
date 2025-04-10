@@ -76,7 +76,6 @@ def baixar_mp4():
 aba = tk.Tk()
 aba.title("YouTube Downloader")
 aba.geometry("400x300")
-aba.resizable(False)
 aba.config(bg=COR_FUNDO)
 
 ttk.Label(aba, text="Baixe vídeos ou áudios do YouTube", background=COR_FUNDO, foreground=COR_TEXTO, font=("Arial", 14, "bold")).pack(pady=20)

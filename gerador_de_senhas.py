@@ -6,7 +6,8 @@ char_a = [':',';','!','@','#','%','-','_','/','.',':',';','!','@','#','%','-','_
 print('gerador de senhas')
 
 quantidade = int(input('O número de caracteres da senha: '))
-x = int(input('Se quiser caracteres especiais digite 1: '))
+x = int(input('Se quiser tudo digite 1\nSe quiser só números digite 2\nSe quiser só letras digite 3\nSe quiser sem caracteres especiais digite 4\nSe quiser números+carateres especiais digite 5:\n'))
+
 senha = ''
 
 caracteres = numeros+letras+char_a if x == 1 else numeros+letras
